@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChosePostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_ost">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:onClick="goBackToMainAcrivityFromAddPost"
+            android:src="@drawable/ic_back_light" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_ost"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editpostdata"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar_ost"
+            android:layout_margin="10dp"
+            android:background="@drawable/inputs"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Расскажи о новом в жизни..."
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/edit_delete_post"
+            android:layout_width="64dp"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/buttons"
+            android:onClick="DeletePostButton"
+            app:srcCompat="@drawable/ic_delete_post" />
+
+        <Button
+            android:id="@+id/edit_save_changes"
+            android:layout_width="287dp"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="86dp"
+            android:background="@drawable/buttons"
+            android:onClick="EditPost"
+            android:text="Сохранить изменения"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/edit_gallery_pick"
+            android:layout_width="63dp"
+            android:layout_height="94dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/buttons"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_add_photo_to_post" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/post_shower"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar_ost"
+        android:background="@drawable/all_background">
+
+        <LinearLayout
+            android:id="@+id/edit_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_profile_avatar_post"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/trustees" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="clip_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Опубликовано:" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edit_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="User Name"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_header"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/edit_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/edit_image_post_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+   
+
+
+</RelativeLayout>

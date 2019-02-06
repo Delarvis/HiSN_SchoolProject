@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "324914035348",
+    "firebase_url": "https://hisn-cbae9.firebaseio.com",
+    "project_id": "hisn-cbae9",
+    "storage_bucket": "hisn-cbae9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324914035348:android:30bdc7ea4ec1dd4f",
+        "android_client_info": {
+          "package_name": "hisn.hirrasoft.com.hisn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324914035348-hlgcb8rhevh414lq1eb9aoqffgk5dk3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hisn.hirrasoft.com.hisn",
+            "certificate_hash": "ee84521ec41435d2d622ec59815eef2bacac188c"
+          }
+        },
+        {
+          "client_id": "324914035348-u1386qb8ho42sr65dt6la0qbk7c151qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChq9QdcQjTON9ticXnzcMVzMPUn2LQzcs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324914035348-u1386qb8ho42sr65dt6la0qbk7c151qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

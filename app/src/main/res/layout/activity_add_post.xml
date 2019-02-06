@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_background"
+    tools:context=".AddPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_ost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:onClick="goBackToMainAcrivityFromAddPost"
+            android:src="@drawable/ic_back_light" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/postdata"
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_ost"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Расскажи о новом в жизни..."
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="13sp" />
+
+    <ImageButton
+        android:id="@+id/galleryPhoto"
+        android:layout_width="64dp"
+        android:layout_height="59dp"
+        android:layout_alignStart="@+id/postdata"
+        android:layout_below="@+id/postdata"
+        android:layout_margin="5dp"
+        android:background="@drawable/buttons"
+        android:onClick="pickImageFromGallery"
+        app:srcCompat="@drawable/ic_add_photo_to_post" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="226dp"
+        android:layout_height="59dp"
+        android:layout_alignEnd="@+id/postdata"
+        android:layout_alignTop="@+id/galleryPhoto"
+        android:background="@drawable/buttons"
+        android:onClick="sendPost"
+        android:text="Отправить пост!"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

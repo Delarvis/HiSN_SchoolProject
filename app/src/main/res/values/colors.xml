@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20faff</color>
+    <color name="colorPrimaryDark">#20B2AA</color>
+    <color name="colorAccent">#00ced1</color>
+    <color name="light_grey">#e8e8e8</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="photo_show">#000000</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_background"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_find_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Найти друзей" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_above="@+id/header_find"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-101dp"
+        android:gravity="center"
+        android:text="Вы можете найти здесь друзей!" />
+
+    <LinearLayout
+        android:id="@+id/header_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="101dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/find_friends_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:onClick="findUserButton"
+            android:src="@drawable/ic_find"
+            android:text="Button" />
+
+        <EditText
+            android:id="@+id/find_user_field"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/find_friends_button"
+            android:background="@drawable/inputs"
+            android:ems="10"
+            android:hint="Введите имя пользователя здесь..."
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/find_friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="407dp"
+        android:layout_below="@id/header_find"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

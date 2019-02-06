@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/noty_friend"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:background="@drawable/inputs"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/n_avatar_comment"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/trustees" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:text="Под вашим постом добавил комментарий:" />
+
+                <TextView
+                    android:id="@+id/n_username_comment"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="Username"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/n_comment_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

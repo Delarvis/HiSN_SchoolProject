@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    android:gravity="center_vertical|center_horizontal|center"
+    tools:context=".RegisterActivity">
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/buttons"
+        android:onClick="loginInMakedAccount"
+        android:text="Войти"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/r_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="199dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:hint="Ваш email..."
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/r_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/r_email_input"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:hint="Ваш пароль..."
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/r_password_repeat_input"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@+id/r_password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:hint="Повторите ваш пароль..."
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_password_repeat_input"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/buttons"
+        android:onClick="createNewAccount"
+        android:text="Создать новый аккаунт!"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="-5dp"
+        android:text="или войти в существующий:"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

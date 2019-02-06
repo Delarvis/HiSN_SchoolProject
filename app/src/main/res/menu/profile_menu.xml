@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Введите статус..."
+        android:id="@+id/profile_status"
+        android:icon="@drawable/ic_profile_status">
+
+    </item>
+
+    <item
+        android:title="0 друзей"
+        android:id="@+id/profile_friends"
+        android:icon="@drawable/ic_profile_friends">
+
+    </item>
+
+    <item
+        android:title="Ваш родная страна"
+        android:id="@+id/profile_country"
+        android:icon="@drawable/ic_profile_country">
+
+    </item>
+
+    <item
+        android:title="Посты этого пользователя"
+        android:id="@+id/profile_posts"
+        android:icon="@drawable/ic_users_posts">
+
+    </item>
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_background"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/show_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/profile_avatar_show"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trustees" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#73E0FFFF">
+
+            <TextView
+                android:id="@+id/p_username_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username" />
+
+            <ImageView
+                android:id="@+id/p_verifed_status"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_verifed_status" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/p_name_and_lastnam"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignBottom="@+id/profile_avatar_show"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/list_profile_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/profile_avatar_show"
+            android:layout_marginBottom="101dp"
+            app:menu="@menu/profile_menu" />
+
+        <Button
+            android:id="@+id/add_friend_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/subscribe_button"
+            android:onClick="add_friend_in_profile"
+            android:text="Добавить в друзья"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/toolbar_profile"
+            android:background="@drawable/buttons"
+            android:padding="5dp"
+            android:text="Online" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/show_big_avatar"
+        android:visibility="gone">
+        <include layout="@layout/avatar_show_big" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/load_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="236dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

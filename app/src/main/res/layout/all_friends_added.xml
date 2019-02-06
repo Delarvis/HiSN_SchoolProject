@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/adf_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/trustees" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/added_friend_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Username"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/write_message_to_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons"
+                    android:text="Сообщения"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/delete_from_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons"
+                    android:text="Удалить из друзей"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/friends_to_black_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons"
+                    android:text="Заблокировать"
+                    android:textSize="8sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
